@@ -22,7 +22,7 @@ class Server {
         this.middlewares();
         this.routes();
     }
-    //TODO: Connect to data base
+    //Connect to data base
     async dbConnection() {
         try {
             await connections_1.default.authenticate();
@@ -50,6 +50,5 @@ class Server {
         });
     }
 }
-// export default because there is only one class to export
 exports.default = Server;
 //# sourceMappingURL=server.js.map
